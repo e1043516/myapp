@@ -19,7 +19,7 @@ app.get('/',(req,resp) => {
     //set the status code
     resp.status(200)
     //send the response
-    resp.send(`<h1>The current new time is ${new Date()} </h1>`) //when you need to substitute sth, you need to use ` instead of '
+    resp.send(`<h1>The current new time is ${new Date()} </h1> <h3> This is added by Shaun Lin </h3> I am adding new things again ...`) //when you need to substitute sth, you need to use ` instead of '
 
 })
 

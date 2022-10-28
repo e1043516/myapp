@@ -20,12 +20,12 @@ app.get('/',(req,resp) => {
     resp.status(200)
     //send the response
     resp.send(`<h1>The current new time is ${new Date()} </h1> <h3> This is added by Shaun Lin </h3> I am adding new things again ...`) //when you need to substitute sth, you need to use ` instead of '
-    resp.send(`<h1>The current new time is ${new Date()} </h1><img src="/static/aaa.jpg">`) //when you need to substitute sth, you need to use ` instead of '
+    resp.send(`<h1>The current new time is ${new Date()} </h1><img src="/assets/aaa.jpg">`) //when you need to substitute sth, you need to use ` instead of '
 
 })
 
 //serve static resource
-app.use("/static", express.static(__dirname + "/static"))
+app.use("/assets", express.static(__dirname + "/static"))
 
 //Start our web application
 app.listen(port,() => {
